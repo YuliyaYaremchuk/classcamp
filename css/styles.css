@@ -1,0 +1,131 @@
+:root {
+  --main-color-font: #ffffff;
+  --secondary-color-font: #000000;
+  --header-bg-color: #ffffff;
+  --primary-bg-color: #121118;
+  --secondary-bg-color: #100e14;
+  --tertiary-bg-color: #0a0a0a;
+  --footer-bg-color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-color-font);
+  background-color: var(--primary-bg-color);
+}
+
+.container {
+  width: 1350px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marker {
+  list-style: none;
+}
+
+
+
+/* ------------------HEADER------------------ */
+header {
+  background-color: var(--header-bg-color);
+}
+
+.header-container {
+  display: flex;
+
+  padding-top: 32px;
+  padding-bottom: 35px;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu-item:not(:last-child) {
+  margin-right: 52px;
+}
+
+.main-menu-link {
+  text-decoration: none;
+  color: var(--secondary-color-font);
+
+  padding-top: 32px;
+  padding-bottom: 35px;
+}
+
+.registration {
+  display: flex;
+  margin-left: auto;
+}
+
+.registration-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.registration-link {
+  text-decoration: none;
+  color: var(--secondary-color-font);
+
+  padding-top: 32px;
+  padding-bottom: 35px;
+}
+
+/* ------------------MAIN------------------ */
+
+/* HERO */
+.hero{
+    background-color: var(--secondary-bg-color);
+}
+.title-hero {
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 2.88px;
+}
+
+/* ABOUT US */
+.about-us-item{
+    list-style: none;
+}
+
+.title {
+    font-size: 58px;
+line-height: 1.21;
+letter-spacing: 1.92px;
+}
+.text{
+font-size: 25px;
+line-height: 1.52;
+letter-spacing: 1.08px;
+color: rgba(255, 255, 255, 0.5);
+}
+.accent{
+    font-weight: 700;
+    color: var(--main-color-font); 
+}
