@@ -29,7 +29,6 @@ ol {
 
 img {
   display: block;
-  
 }
 
 body {
@@ -121,6 +120,7 @@ header {
 
 /* ------------------MAIN------------------ */
 .title {
+  font-weight: 400;
   font-size: 58px;
   line-height: 1.21;
   letter-spacing: 1.92px;
@@ -167,6 +167,7 @@ header {
 
 /* =====ABOUT US===== */
 .about-us-section {
+  padding-top: 58px;
   padding-bottom: 180px;
 }
 
@@ -204,13 +205,58 @@ header {
 }
 
 /* ===== COACHES ===== */
+.coaches-section {
+  padding-top: 136px;
+  padding-bottom: 160px;
+
+  text-align: center;
+}
+
+.coaches-title {
+  width: 510px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 77px;
+}
+
+.coaches-text {
+  width: 617px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 88px;
+}
 
 .coaches-list {
   display: flex;
 }
 
-
 /* ===== GROUP COURSES ===== */
-.group-courses{
+.group-courses {
   text-align: center;
+  padding-top: 175px;
+  padding-bottom: 60px;
+}
+
+.group-courses-title {
+  width: 787px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 21px;
+  margin-bottom: 32px;
+}
+
+.group-courses-text {
+  width: 904px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 69px;
+}
+
+.group-courses-img{
+  margin-left: auto;
+  margin-right: auto;
 }
