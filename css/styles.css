@@ -6,6 +6,7 @@
   --secondary-bg-color: #100e14;
   --tertiary-bg-color: #0a0a0a;
   --footer-bg-color: #000000;
+  --color-btn: #ff4343;
 }
 
 h1,
@@ -28,6 +29,7 @@ ol {
 
 img {
   display: block;
+  
 }
 
 body {
@@ -48,8 +50,20 @@ body {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+  color: inherit;
 
+  background-color: var(--color-btn);
+  border: none;
+  border-radius: 8px;
+  min-width: 281;
 
+  padding: 19px 80px 19px 30px;
+  font-size: 23px;
+  line-height: 1.57;
+  letter-spacing: 0.42px;
+}
 /* ------------------HEADER------------------ */
 header {
   background-color: var(--header-bg-color);
@@ -60,6 +74,16 @@ header {
 
   padding-top: 32px;
   padding-bottom: 35px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.logotype {
+  margin-right: 64px;
+  text-decoration: none;
+  color: var(--secondary-color-font);
 }
 
 .main-menu {
@@ -96,10 +120,27 @@ header {
 }
 
 /* ------------------MAIN------------------ */
+.title {
+  font-size: 58px;
+  line-height: 1.21;
+  letter-spacing: 1.92px;
 
-/* HERO */
-.hero{
-    background-color: var(--secondary-bg-color);
+  text-align: center;
+}
+.text {
+  font-size: 25px;
+  line-height: 1.52;
+  letter-spacing: 1.08px;
+  color: rgba(255, 255, 255, 0.5);
+
+  text-align: center;
+}
+
+/* =====HERO===== */
+.hero {
+  background-color: var(--secondary-bg-color);
+  padding-top: 96px;
+  text-align: center;
 }
 .title-hero {
   font-weight: 400;
@@ -107,25 +148,69 @@ header {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 2.88px;
+
+  margin-bottom: 44px;
 }
 
-/* ABOUT US */
-.about-us-item{
-    list-style: none;
+.hero-text {
+  margin-bottom: 73px;
 }
 
-.title {
-    font-size: 58px;
-line-height: 1.21;
-letter-spacing: 1.92px;
+.hero-text-small {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.42px;
+
+  margin-top: 19px;
+  margin-bottom: 61px;
 }
-.text{
-font-size: 25px;
-line-height: 1.52;
-letter-spacing: 1.08px;
-color: rgba(255, 255, 255, 0.5);
+
+/* =====ABOUT US===== */
+.about-us-section {
+  padding-bottom: 180px;
 }
-.accent{
-    font-weight: 700;
-    color: var(--main-color-font); 
+
+.about-us-item {
+  list-style: none;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.about-us-item:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+
+.about-us-item:not(:last-child) {
+  margin-bottom: 360px;
+}
+
+.description {
+  width: 500px;
+}
+
+.about-us-title {
+  margin-bottom: 38px;
+  text-align: left;
+}
+
+.about-us-text {
+  text-align: left;
+}
+
+.accent {
+  font-weight: 700;
+  color: var(--main-color-font);
+}
+
+/* ===== COACHES ===== */
+
+.coaches-list {
+  display: flex;
+}
+
+
+/* ===== GROUP COURSES ===== */
+.group-courses{
+  text-align: center;
 }
