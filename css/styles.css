@@ -50,15 +50,21 @@ body {
 }
 
 button {
+  display: flex;
+  justify-content: center;
+
   cursor: pointer;
   color: inherit;
 
   background-color: var(--color-btn);
   border: none;
   border-radius: 8px;
-  min-width: 281;
 
-  padding: 19px 80px 19px 30px;
+  min-width: 281px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  margin: 0 auto;
+
   font-size: 23px;
   line-height: 1.57;
   letter-spacing: 0.42px;
@@ -70,19 +76,23 @@ header {
 
 .header-container {
   display: flex;
-
-  padding-top: 32px;
-  padding-bottom: 35px;
+  align-items: center;
 }
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .logotype {
   margin-right: 64px;
   text-decoration: none;
   color: var(--secondary-color-font);
+  padding-top: 32px;
+  padding-bottom: 35px;
+}
+.logo-icon {
+  fill: var(--secondary-color-font);
 }
 
 .main-menu {
@@ -94,6 +104,7 @@ header {
 }
 
 .main-menu-link {
+  display: block;
   text-decoration: none;
   color: var(--secondary-color-font);
 
@@ -165,6 +176,11 @@ header {
   margin-bottom: 61px;
 }
 
+.btn::after {
+  content: url(../image/Vector.svg);
+  margin-left: 12px;
+}
+
 /* =====ABOUT US===== */
 .about-us-section {
   padding-top: 58px;
@@ -230,13 +246,98 @@ header {
 
 .coaches-list {
   display: flex;
+  gap: 16px;
 }
 
+.coaches-item {
+  display: flex;
+  align-items: flex-end;
+
+  width: 251px;
+  height: 452px;
+  padding-bottom: 50px;
+
+  border-radius: 12px;
+}
+
+.coaches-item:nth-child(1) {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 31.25%,
+      #000000 100%
+    ),
+    url(../image/videograph.png);
+}
+
+.coaches-item:nth-child(2) {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 31.25%,
+      #000000 100%
+    ),
+    url(../image/businesswoman.png);
+}
+
+.coaches-item:nth-child(3) {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 31.25%,
+      #000000 100%
+    ),
+    url(../image/graffity.png);
+}
+
+.coaches-item:nth-child(4) {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 31.25%,
+      #000000 100%
+    ),
+    url(../image/yoga.png);
+}
+
+.coaches-item:nth-child(5) {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 31.25%,
+      #000000 100%
+    ),
+    url(../image/businessman.png);
+}
+
+.coaches-subtitle {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.42px;
+
+  margin-bottom: 12px;
+}
+
+.coaches-name{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.42px;
+
+margin-bottom: 1px;
+}
 /* ===== GROUP COURSES ===== */
 .group-courses {
   text-align: center;
   padding-top: 175px;
   padding-bottom: 60px;
+}
+
+.coaches-proffesion{
+  font-weight: 400;
+font-size: 15px;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.42px;
+color: rgba(255, 255, 255, 0.65);
 }
 
 .group-courses-title {
@@ -256,7 +357,7 @@ header {
   margin-bottom: 69px;
 }
 
-.group-courses-img{
+.group-courses-img {
   margin-left: auto;
   margin-right: auto;
 }

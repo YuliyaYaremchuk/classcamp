@@ -22,7 +22,11 @@
     <header>
       <div class="header-container container">
         <nav class="navigation">
-          <a class="logotype" href="">Classcamp</a>
+          <a class="logotype" href="">
+            <svg class="logo-icon" width="120" height="23">
+              <use href="/image/sprite.svg#icon-logotype-header"></use>
+            </svg>
+          </a>
           <ul class="main-menu marker">
             <li class="main-menu-item">
               <a class="main-menu-link" href="">Pricing</a>
@@ -55,7 +59,7 @@
           <p class="hero-text text">
             Classcamp is the easiest way to create an online course.
           </p>
-          <button type="button">Create a course</button>
+          <button type="button" class="btn">Create a course</button>
           <p class="hero-text-small">If you're a student, continue here</p>
           <img
             src="./image/monitorscreen.png"
@@ -159,7 +163,7 @@
       <!-- COACHES -->
       <section class="coaches-section">
         <div class="container">
-          <h2 class="coaches-title title">
+          <h2 class="coaches-subtitle title">
             Trusted by the best at their craft
           </h2>
           <p class="coaches-text text">
@@ -167,55 +171,40 @@
             learning experiences
           </p>
           <ul class="coaches-list">
-            <li class="marker">
-              <img
-                src="./image/videograph.png"
-                alt=""
-                width="251px"
-                height="452px"
-              />
-              <h3>Videography for movement</h3>
-              <p>Alessandro Sigismondi</p>
-              <p>Photographer</p>
+            <li class="coaches-item marker">
+              <div class="coaches-description">
+                <h3 class="coaches-subtitle">Videography for movement</h3>
+                <p class="coaches-name">Alessandro Sigismondi</p>
+                <p class="coaches-proffesion">Photographer</p>
+              </div>
             </li>
-            <li class="marker">
-              <img
-                src="./image/businesswoman.png"
-                alt=""
-                width="251px"
-                height="452px"
-              />
-              <h3>Create the life and business you want</h3>
-              <p>Keltie Maguire</p>
-              <p>Business coach</p>
+            <li class="coaches-item marker">
+              <div class="coaches-description">
+                <h3 class="coaches-subtitle">Create the life and business you want</h3>
+                <p  class="coaches-name">Keltie Maguire</p>
+                <p class="coaches-proffesion">Business coach</p>
+              </div>
             </li>
-            <li class="marker">
-              <img
-                src="./image/graffity.png"
-                alt=""
-                width="251px"
-                height="452px"
-              />
-              <h3>Get started with Graffiti</h3>
-              <p>By SMOE NOVA</p>
-              <p>Youtuber</p>
+            <li class="coaches-item marker">
+              <div class="coaches-description">
+                <h3 class="coaches-subtitle">Get started with Graffiti</h3>
+                <p  class="coaches-name">By SMOE NOVA</p>
+                <p class="coaches-proffesion">Youtuber</p>
+              </div>
             </li>
-            <li class="marker">
-              <img src="./image/yoga.png" alt="" width="251px" height="452px" />
-              <h3>Yoga and Mindfulness</h3>
-              <p>By Annika Isterling</p>
-              <p>Yoga teacher</p>
+            <li class="coaches-item marker">
+              <div class="coaches-description">
+                <h3 class="coaches-subtitle">Yoga and Mindfulness</h3>
+                <p  class="coaches-name">By Annika Isterling</p>
+                <p class="coaches-proffesion">Yoga teacher</p>
+              </div>
             </li>
-            <li class="marker">
-              <img
-                src="./image/businessman.png"
-                alt=""
-                width="251px"
-                height="452px"
-              />
-              <h3>Holistic business and wellbeing</h3>
-              <p>By Leo de Melo</p>
-              <p>Business coach</p>
+            <li class="coaches-item marker">
+              <div class="coaches-description">
+              <h3 class="coaches-subtitle">Holistic business and wellbeing</h3>
+              <p  class="coaches-name">By Leo de Melo</p>
+              <p class="coaches-proffesion">Business coach</p>
+            </div>
             </li>
           </ul>
         </div>
@@ -232,7 +221,13 @@
             through the course. Provide feedback on your own time, via text or
             video.
           </p>
-          <img class="group-courses-img" src="./image/chatbox.png" alt="" width="940px" height="834px" />
+          <img
+            class="group-courses-img"
+            src="./image/chatbox.png"
+            alt=""
+            width="940px"
+            height="834px"
+          />
         </div>
       </section>
       <section>
@@ -241,7 +236,7 @@
           <p class="text">
             Pick a course template and start today - people will love it!
           </p>
-          <button type="button">Create a course</button>
+          <button type="button" class="btn">Create a course</button>
           <p>
             “I can now create a lesson in minutes, instead of days or weeks”
           </p>
