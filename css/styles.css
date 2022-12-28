@@ -71,6 +71,17 @@ button {
   line-height: 1.57;
   letter-spacing: 0.42px;
 }
+
+.btn::after {
+  content: url(../image/Vector.svg);
+  margin-left: 12px;
+}
+
+button:hover,
+button:focus{
+  color: var(--secondary-color-font);
+  background-color: var(--fourth-bg-color);
+}
 /* ------------------HEADER------------------ */
 header {
   background-color: var(--header-bg-color);
@@ -114,6 +125,11 @@ header {
   padding-bottom: 35px;
 }
 
+.main-menu-link:hover,
+.main-menu-link:focus{
+  color: var(--color-btn);
+}
+
 .registration {
   display: flex;
   margin-left: auto;
@@ -131,6 +147,10 @@ header {
   padding-bottom: 35px;
 }
 
+.registration-link:hover,
+.registration-link:focus{
+  color: var(--color-btn);
+}
 /* ------------------MAIN------------------ */
 .title {
   font-weight: 400;
@@ -178,10 +198,7 @@ header {
   margin-bottom: 61px;
 }
 
-.btn::after {
-  content: url(../image/Vector.svg);
-  margin-left: 12px;
-}
+
 
 .hero-text-small::after{
   display: block;
@@ -525,6 +542,10 @@ line-height: 2.13;
 letter-spacing: 0.18px;
 }
 
+.footer-menu-link:hover,
+.footer-menu-link:focus{
+  color: var(--color-btn);
+}
 
 .social-list{
   display: flex;
@@ -534,4 +555,9 @@ letter-spacing: 0.18px;
 
 .social-icon{
   fill: var(--footer-color-font);
+}
+
+.social-icon:hover,
+.social-icon:focus{
+  fill: var(--color-btn);
 }
