@@ -181,6 +181,19 @@ header {
   margin-left: 12px;
 }
 
+.hero-text-small::after{
+  display: block;
+  height: 537px;
+  margin-top: 60px;
+
+  background-image: url(../image/screen.png), url(../image/monitorscreen.png), url(../image/classchapters.png), url(../image/screen.png);
+  background-position: 800px 0, center, 1072px 110px, 1072px 29px;
+  background-size: auto, auto, auto, 256px;
+background-repeat: no-repeat;
+
+content: "";
+}
+
 /* =====ABOUT US===== */
 .about-us-section {
   padding-top: 58px;
@@ -233,7 +246,18 @@ header {
   margin-left: auto;
   margin-right: auto;
 
-  margin-bottom: 77px;
+  margin-bottom: 34px;
+}
+
+.coaches-title::after {
+  display: block;
+  width: 120px;
+  height: 5px;
+  background: #ff4343;
+  content: "";
+
+  margin: 0 auto;
+  margin-top: 38px;
 }
 
 .coaches-text {
@@ -249,18 +273,20 @@ header {
   gap: 16px;
 }
 
-.coaches-item {
+.coaches-link {
   display: flex;
   align-items: flex-end;
 
   width: 251px;
   height: 452px;
   padding-bottom: 50px;
-
   border-radius: 12px;
+
+  color: inherit;
+  text-decoration: none;
 }
 
-.coaches-item:nth-child(1) {
+.coaches-item:nth-child(1) .coaches-link {
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 31.25%,
@@ -269,7 +295,7 @@ header {
     url(../image/videograph.png);
 }
 
-.coaches-item:nth-child(2) {
+.coaches-item:nth-child(2) .coaches-link {
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 31.25%,
@@ -278,7 +304,7 @@ header {
     url(../image/businesswoman.png);
 }
 
-.coaches-item:nth-child(3) {
+.coaches-item:nth-child(3) .coaches-link {
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 31.25%,
@@ -287,7 +313,7 @@ header {
     url(../image/graffity.png);
 }
 
-.coaches-item:nth-child(4) {
+.coaches-item:nth-child(4) .coaches-link {
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 31.25%,
@@ -296,7 +322,7 @@ header {
     url(../image/yoga.png);
 }
 
-.coaches-item:nth-child(5) {
+.coaches-item:nth-child(5) .coaches-link {
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 31.25%,
@@ -315,14 +341,14 @@ header {
   margin-bottom: 12px;
 }
 
-.coaches-name{
+.coaches-name {
   font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-text-align: center;
-letter-spacing: 0.42px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.42px;
 
-margin-bottom: 1px;
+  margin-bottom: 1px;
 }
 /* ===== GROUP COURSES ===== */
 .group-courses {
@@ -331,13 +357,13 @@ margin-bottom: 1px;
   padding-bottom: 60px;
 }
 
-.coaches-proffesion{
+.coaches-proffesion {
   font-weight: 400;
-font-size: 15px;
-line-height: 1.6;
-text-align: center;
-letter-spacing: 0.42px;
-color: rgba(255, 255, 255, 0.65);
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.42px;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .group-courses-title {
@@ -360,4 +386,69 @@ color: rgba(255, 255, 255, 0.65);
 .group-courses-img {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* ===== INVITATION ===== */
+.invitation-box {
+max-width: 1120px;
+
+  padding-top: 66px;
+  padding-bottom: 70px;
+
+  background-color: #1d1b24;
+  border-radius: 30px;
+}
+
+.invitation-title {
+  margin-bottom: 32px;
+}
+
+.invitation-text {
+  margin-bottom: 71px;
+}
+
+/* ===== QUOTE ===== */
+.quote-section {
+  padding-top: 141px;
+  padding-bottom: 149px;
+
+  background-image:linear-gradient(180deg, #1D1B24 0%, rgba(0, 0, 0, 0) 100%), url(../image/quotebackgraung.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.quote-text {
+  width: 701px;
+  margin: 0 auto;
+
+  font-style: italic;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.42px;
+
+  margin-bottom: 14px;
+}
+
+.quote-author {
+  font-size: 23px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.42px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== FEATURED ===== */
+
+.featured{
+  padding-top: 170px;
+  padding-bottom: 140px;
+}
+
+.featured-title{
+  text-align: left;
 }
