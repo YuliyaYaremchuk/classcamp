@@ -5,8 +5,10 @@
   --primary-bg-color: #121118;
   --secondary-bg-color: #100e14;
   --tertiary-bg-color: #0a0a0a;
+  --fourth-bg-color: #8BFFB0;
   --footer-bg-color: #000000;
   --color-btn: #ff4343;
+  --footer-color-font: #ffffff;
 }
 
 h1,
@@ -350,12 +352,6 @@ content: "";
 
   margin-bottom: 1px;
 }
-/* ===== GROUP COURSES ===== */
-.group-courses {
-  text-align: center;
-  padding-top: 175px;
-  padding-bottom: 60px;
-}
 
 .coaches-proffesion {
   font-weight: 400;
@@ -366,12 +362,27 @@ content: "";
   color: rgba(255, 255, 255, 0.65);
 }
 
+/* ===== GROUP COURSES ===== */
+.group-courses {
+  text-align: center;
+  padding-top: 175px;
+  padding-bottom: 60px;
+}
+
+.courses-text{
+  font-size: 22px;
+line-height: 1.09;
+text-align: center;
+letter-spacing: 0.42px;
+color: #8BFFB0;
+margin-bottom: 21px;
+}
+
 .group-courses-title {
   width: 787px;
   margin-left: auto;
   margin-right: auto;
 
-  margin-top: 21px;
   margin-bottom: 32px;
 }
 
@@ -451,4 +462,76 @@ max-width: 1120px;
 
 .featured-title{
   text-align: left;
+}
+
+
+/* ------------------FOOTER------------------ */
+footer{
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: var(--footer-bg-color);
+
+}
+
+.logotype-footer{
+  margin-right: 243.5px;
+}
+
+.footer-container{
+  display: flex;
+}
+
+.logo-icon-footer{
+  fill: var(--footer-color-font);
+  height: 34px;
+  max-width: 208px;
+}
+
+.footer-menu{
+  display: flex;
+  flex-wrap: wrap;
+  width: 614px;
+
+  column-gap: 60px;
+  row-gap: 48px;
+}
+
+.footer-menu-list{
+  min-width: 164.62px;
+}
+
+.footer-menu-link{
+  text-decoration: none;
+  color: var(--footer-color-font);
+}
+
+.footer-menu-link.first{
+  font-size: 18px;
+line-height: 1.1;
+letter-spacing: 0.18px;
+text-transform: uppercase;
+}
+
+.footer-menu-link.second{
+  font-size: 16px;
+line-height: 2;
+letter-spacing: 0.16px;
+}
+
+.footer-menu-link.third{
+  font-size: 15px;
+line-height: 2.13;
+letter-spacing: 0.18px;
+}
+
+
+.social-list{
+  display: flex;
+  margin-left: auto;
+  gap: 5px;
+}
+
+.social-icon{
+  fill: var(--footer-color-font);
 }
