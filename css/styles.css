@@ -216,7 +216,7 @@ header {
 
   background-image: url(../image/screen.png), url(../image/monitorscreen.png),
     url(../image/classchapters.png), url(../image/screen.png);
-  background-position: 800px 0, center, 1072px 110px, 1072px 29px;
+  background-position: 700px 0, 100px 0, 972px 110px, 972px 29px;
   background-size: auto, auto, auto, 256px;
   background-repeat: no-repeat;
 
