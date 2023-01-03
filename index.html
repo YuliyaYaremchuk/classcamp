@@ -59,7 +59,7 @@
           <p class="hero-text text">
             Classcamp is the easiest way to create an online course.
           </p>
-          <button type="button" class="btn">Create a course</button>
+          <button type="button" class="btn" data-modal-open>Create a course</button>
           <p class="hero-text-small">If you're a student, continue here</p>
         
         </div>
@@ -161,6 +161,7 @@
           <ul class="coaches-list">
             <li class="coaches-item marker">
               <a href="" class="coaches-link">
+                <img src="./image/videograph.png" alt="" width="251">
                 <div class="coaches-description">
                   <h3 class="coaches-subtitle">Videography for movement</h3>
                   <p class="coaches-name">Alessandro Sigismondi</p>
@@ -170,6 +171,7 @@
             </li>
             <li class="coaches-item marker">
               <a href="" class="coaches-link">
+                <img src="./image/businesswoman.png" alt="" width="251">
                 <div class="coaches-description">
                   <h3 class="coaches-subtitle">
                     Create the life and business you want
@@ -181,6 +183,7 @@
             </li>
             <li class="coaches-item marker">
               <a href="" class="coaches-link">
+                <img src="./image/graffity.png" alt="" width="251">
                 <div class="coaches-description">
                   <h3 class="coaches-subtitle">Get started with Graffiti</h3>
                   <p class="coaches-name">By SMOE NOVA</p>
@@ -190,15 +193,16 @@
             </li>
             <li class="coaches-item marker">
               <a href="" class="coaches-link">
+                <img src="./image/yoga.png" alt="" width="251">
                 <div class="coaches-description">
                   <h3 class="coaches-subtitle">Yoga and Mindfulness</h3>
                   <p class="coaches-name">By Annika Isterling</p>
                   <p class="coaches-proffesion">Yoga teacher</p>
-                </div></a
-              >
+                </div></a>
             </li>
             <li class="coaches-item marker">
               <a href="" class="coaches-link">
+                <img src="./image/businessman.png" alt="" width="251">
                 <div class="coaches-description">
                   <h3 class="coaches-subtitle">
                     Holistic business and wellbeing
@@ -238,7 +242,7 @@
           <p class="invitation-text text">
             Pick a course template and start today - people will love it!
           </p>
-          <button type="button" class="btn">Create a course</button>
+          <button type="button" class="btn" data-modal-open>Create a course</button>
         </section>
       <section class="quote-section">
         <div class="quote container">
@@ -297,21 +301,21 @@
       </div>
         <ul class="social-list marker">
           <li>
-            <a href="">
+            <a href="" class="social-madia">
               <svg class="social-icon" width="40" height="40">
                 <use href="./image/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="social-madia">
               <svg class="social-icon" width="40" height="40">
                 <use href="./image/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="social-madia">
               <svg class="social-icon" width="40" height="40">
                 <use href="./image/sprite.svg#icon-twitter"></use>
               </svg>
@@ -320,5 +324,19 @@
         </ul>
     </div>
     </footer>
+
+    <!-- MODAL-WINDOW -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-img" width="8" height="8">
+          <use href="./image/sprite.svg#close-btn"></use>
+        </svg>
+      </button>
+      </div>
+    </div>
+    
+<script src="./js/modal.js"></script>
   </body>
 </html>
