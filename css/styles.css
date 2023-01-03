@@ -7,7 +7,7 @@
   --tertiary-bg-color: #0a0a0a;
   --fourth-bg-color: #8bffb0;
   --footer-bg-color: #000000;
-  --color-btn: #ff4343;
+  --color-btn: hwb(0 26% 0%);
   --footer-color-font: #ffffff;
   --transition--function: 250ms linear;
 }
@@ -83,9 +83,12 @@ body {
 
 .btn:hover,
 .btn:focus {
-  color: var(--secondary-color-font);
-  background-color: var(--fourth-bg-color);
-}
+  background-color: #a82424;}
+
+  .btn:active{
+    box-shadow: inset 0px 0px 18px 7px rgba(0,0,0,0.4);
+  }
+
 /* ------------------HEADER------------------ */
 header {
   background-color: var(--header-bg-color);
