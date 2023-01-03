@@ -222,7 +222,7 @@ header {
 
 /* =====ABOUT US===== */
 .about-us-section {
-  padding-top: 58px;
+  padding-top: 220px;
   padding-bottom: 180px;
 }
 
@@ -233,7 +233,7 @@ header {
   justify-content: space-between;
 }
 
-.about-us-item:nth-child(2n + 1) {
+.about-us-item:nth-child(2n + 3) {
   flex-direction: row-reverse;
 }
 
@@ -257,6 +257,24 @@ header {
 .accent {
   font-weight: 700;
   color: var(--main-color-font);
+}
+
+.shoot-lessons{
+  position: relative;
+}
+
+.classchapters-img{
+position: absolute;
+top: -58px;
+left: 692px;
+
+transform: rotate(-30deg);
+}
+
+.screen-img{
+position: absolute;
+top: -220px;
+left: 988px;
 }
 
 /* ===== COACHES ===== */
@@ -602,6 +620,7 @@ footer {
   
   padding: 8px;
   
+  border: 0.5px solid;
   border-radius: 50%;
   background-color: transparent;
 
